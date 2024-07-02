@@ -135,3 +135,34 @@ document.addEventListener("DOMContentLoaded", function () {
         return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
     }
 });
+
+
+
+
+
+
+
+
+
+
+        // Wyświetl okno modalne z ostrzeżeniem
+        document.getElementById('age-warning-modal').style.display = 'block';
+      
+        // Obsługa kliknięcia przycisku "Tak"
+        document.getElementById('age-yes-button').addEventListener('click', function() {
+        // Ukryj okno modalne
+        document.getElementById('age-warning-modal').style.display = 'none';
+        document.getElementById('allunlock').style.display = 'block';
+
+        // Wywołaj funkcję albumfunction(), jeśli taka jest zdefiniowana
+        if (typeof albumfunction === 'function') {
+            albumfunction();
+        }
+    });
+        
+        // Obsługa kliknięcia przycisku "Nie"
+        document.getElementById('age-no-button').addEventListener('click', function() {
+          // Przekierowanie na inną stronę lub wyświetlenie komunikatu
+          alert('Musisz mieć ukończone 18 lat, aby wejść na tę stronę.');
+          window.location.href = 'https://example.com'; // Zmień ten URL na adres, na który chcesz przekierować
+        });

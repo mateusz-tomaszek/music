@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Player</title>
+    <title>Mateusz Tomaszek - Music</title>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/img/logo.png">
+    <meta name="author" content="mateusz tomaszek">
 </head>
 <body>
-    <div id="music-player">
+
+
+    <div id="age-warning-modal">
+        <div>
+          <h1>18+</h1>
+          <p>Aby wejść na tę stronę, musisz mieć ukończone 18 lat.<br>Czy masz 18 lat lub więcej?</p>
+          <button id="age-yes-button">Tak</button>
+          <button id="age-no-button">Nie</button>
+          <br>
+          <br>
+          <p>Wybierz Album</p>
+          <select name="albumcheck" id="albumcheck">
+            <option value="marzenia">2024 - Marzenia</option>
+            <!-- <option value="a2">TEST</option> -->
+        </select>
+        </div>
+      </div>
+    
+    
+    <script>
+    const select = document.getElementById('albumcheck');
+
+    function albumfunction() 
+    {
+        const select = document.getElementById('albumcheck');
+        const albumMarzenia = document.getElementById('album-marzenia');
+        const album2 = document.getElementById('album-2');
+
+        if (select.value === 'marzenia') {
+            albumMarzenia.style.display = 'block'; 
+        } 
+
+        else if (select.value === 'a2') 
+        {
+            album2.style.display = 'block'; 
+        } 
+
+        else 
+        {
+            console.log("Nie wybrano nic");
+        }
+    }
+    </script>
+
+
+
+
+      <div id="allunlock" style="display: none;">
+
+
+    <div id="album-marzenia" style="display: none;">
+
 
         <!-- Audio -->
         <audio id="audio">
@@ -50,8 +104,16 @@
             <span style="margin-left: 5px;" class="voll"> <i class="fa fa-volume-up" aria-hidden="true"></i> </span>
         </div>
         
-       
+       <div class="list" style="display: none;">
+
+       </div>
     </div>
+
+</div>
+
+<div id="album-2" style="display: none;">
+    <h1>TEST</h1>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
