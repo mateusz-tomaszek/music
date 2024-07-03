@@ -13,21 +13,22 @@
 <body>
 
 
-    <div id="age-warning-modal">
+    <div id="choose">
         <div>
-          <h1>18+</h1>
-          <p>Aby wejść na tę stronę, musisz mieć ukończone 18 lat.<br>Czy masz 18 lat lub więcej?</p>
-          <button id="age-yes-button">Tak</button>
-          <button id="age-no-button">Nie</button>
-          <br>
+          <h1>Najpierw wybierz Album</h1>
+          <p>Na stronie są pokazane 30 sekundowe fragmetny piosenek,<br>pełne utwory na <a id="link1" target="_blank" href="https://www.youtube.com/@mateusz_tomaszek">youtube <i class="fa fa-external-link"></i></a></p>
+
           <br>
           <p>Wybierz Album</p>
           <select name="albumcheck" id="albumcheck">
             <option value="marzenia">2024 - Marzenia</option>
             <!-- <option value="a2">TEST</option> -->
         </select>
+        <br>
+        <br>
+        <button id="choose-button" onclick="wyswietl()">Dalej</button>
         </div>
-      </div>
+    </div>
     
     
     <script>
@@ -38,34 +39,39 @@
         });
 
 
-    const select = document.getElementById('albumcheck');
 
-    function albumfunction() 
+    
+
+    function wyswietl() 
     {
         const select = document.getElementById('albumcheck');
-        const albumMarzenia = document.getElementById('album-marzenia');
-        const album2 = document.getElementById('album-2');
 
-        if (select.value === 'marzenia') {
-            albumMarzenia.style.display = 'block'; 
+
+
+        document.getElementById('choose').style.display = "none";
+
+        if (select.value === 'marzenia') 
+        {
+            document.getElementById('album-marzenia').style.display = 'block'; 
         } 
 
         else if (select.value === 'a2') 
         {
-            album2.style.display = 'block'; 
+            document.getElementById('album-2').style.display = 'block'; 
         } 
 
         else 
         {
-            console.log("Nie wybrano nic");
+            document.getElementById('choose').style.display = "block";
         }
     }
+
     </script>
 
 
 
 
-      <div id="allunlock" style="display: none;">
+     
 
 
     <div id="album-marzenia" style="display: none;">
@@ -116,7 +122,7 @@
        </div>
     </div>
 
-</div>
+
 
 <div id="album-2" style="display: none;">
     <script src="assets/2.js"></script> <!--  !  -->
