@@ -31,6 +31,13 @@
     
     
     <script>
+
+        // Blokowanie prawego przycisku myszy
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+
     const select = document.getElementById('albumcheck');
 
     function albumfunction() 
