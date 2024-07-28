@@ -19,12 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const trackList = [
         "audio/Nasza Droga.mp3",
         "audio/Ona.mp3",
-        "audio/Sesja Marzeń.mp3"
+        "audio/Sesja Marzeń.mp3",
+        "audio/Miasto.mp3",
+        "audio/BMW.mp3",
+        "audio/Razem Na Zawsze.mp3"
         // Add more tracks as needed
     ];
 
     // Array of Album Photos
     const albumPhotos = [
+        "assets/img/marzenia.jpg",
+        "assets/img/marzenia.jpg",
+        "assets/img/marzenia.jpg",
         "assets/img/marzenia.jpg",
         "assets/img/marzenia.jpg",
         "assets/img/marzenia.jpg"
