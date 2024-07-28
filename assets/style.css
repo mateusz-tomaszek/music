@@ -331,6 +331,16 @@ input[type="range"]
 
 
 
+
+#link1
+{
+  color: #f30f0f;
+}
+#link2
+{
+  color: #06b900;
+}
+
  
 #choose {
     display: block;
@@ -362,7 +372,6 @@ input[type="range"]
     #choose a
     {
         text-decoration: none;
-        color: #f30f0f;
         font-weight: bold;
         transition: 0.2s all;
         padding: 5px;
@@ -370,7 +379,7 @@ input[type="range"]
     #choose a:hover
     {
         
-        color: #e06969;
+        color: #b8b8b8;
        
     }
   
