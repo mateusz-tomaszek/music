@@ -270,6 +270,7 @@ input[type="range"]
     #album-marzenia{
         display: none;
     }
+    
 }
 
 
@@ -355,6 +356,10 @@ input[type="range"]
     z-index: 1000;
   }
 
+  option
+  {
+    text-align: center;
+  }
   #choose div {
     position: relative;
     top: 50%;
