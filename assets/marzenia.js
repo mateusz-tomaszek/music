@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "audio/Sesja Marzeń.mp3",
         "audio/BMW.mp3",
         "audio/Razem Na Zawsze.mp3",
-        "audio/Miasto.mp3"
+        "audio/Noc.mp3"
     ];
 
     // Array of Album Photos
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "assets/img/marzenia.jpg",
         "assets/img/marzenia.jpg",
         "assets/img/marzenia.jpg",
-        "assets/img/hidden.jpg"
+        "assets/img/noc.jpg"
     ];
 
     // Function to toggle between Play and Pause
